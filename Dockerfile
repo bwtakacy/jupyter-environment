@@ -2,8 +2,8 @@ From jupyter/datascience-notebook
 
 COPY . /opt/jupyter-environment
 WORKDIR /opt/jupyter-environment
-RUN mkdir /opt/notebooks
-RUN chmod 777 -R /opt/notebooks
+RUN mkdir -p /tmp/notebooks
+RUN chmod 777 -R /tmp/notebooks
 
 EXPOSE 8888
 
