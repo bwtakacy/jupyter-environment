@@ -5,6 +5,8 @@ WORKDIR /opt/jupyter-environment
 RUN mkdir -p /tmp/notebooks
 RUN chmod 777 -R /tmp/notebooks
 
+RUN pip install td-client pandas-td
+
 EXPOSE 8888
 
 CMD ["/opt/jupyter-environment/run.sh"]
