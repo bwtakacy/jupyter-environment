@@ -5,8 +5,8 @@ WORKDIR /opt/jupyter-environment
 #RUN mkdir -p /tmp/notebooks
 #RUN chmod 777 -R /tmp/notebooks
 
-RUN useradd -p `perl -e “print(crypt(‘password’, ‘ab’));”` bwtakacy
-RUN useradd -p `perl -e “print(crypt(‘password’, ‘ab’));”` user01
+RUN useradd -p `perl -e "print(crypt('password', 'ab'));"` bwtakacy
+RUN useradd -p `perl -e "print(crypt('password', 'ab'));"` user01
 RUN mkdir -p /home/bwtakacy/notebooks
 RUN mkdir -p /home/user01/notebooks
 RUN chown bwtakacy /home/bwtakacy/notebooks
