@@ -2,6 +2,7 @@ From jupyter/datascience-notebook
 
 COPY . /opt/jupyter-environment
 WORKDIR /opt/jupyter-environment
+RUN chmod 777 -R /opt/jupyter-environment
 RUN mkdir -p /tmp/notebooks
 RUN chmod 777 -R /tmp/notebooks
 
